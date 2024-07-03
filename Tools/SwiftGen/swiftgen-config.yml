@@ -1,0 +1,32 @@
+input_dir: ../../Riot/
+output_dir: ../../Riot/Generated/
+ib:  
+  inputs:
+    - ../Tools/Templates/buildable/
+    - Modules/
+  filter: ^((?!(DeactivateAccountViewController|Security)).)*\.(storyboard)
+  outputs:
+    templateName: scenes-swift4
+    output: Storyboards.swift
+strings:
+  - inputs: Assets/en.lproj/Vector.strings
+    outputs:
+      templatePath: Templates/Strings/flat-swift4-vector.stencil
+      output: Strings.swift
+      params:
+        className: VectorL10n
+        publicAccess: true
+  - inputs: Assets/en.lproj/Untranslated.strings
+    outputs:
+      templatePath: Templates/Strings/flat-swift4-vector-untranslated.stencil
+      output: UntranslatedStrings.swift
+      params:
+        className: VectorL10n
+        publicAccess: true
+xcassets:  
+  inputs:
+    - Assets/Images.xcassets
+    - Assets/SharedImages.xcassets
+  outputs:
+    templatePath: Templates/Assets/swift4-element.stencil
+    output: Images.swift
