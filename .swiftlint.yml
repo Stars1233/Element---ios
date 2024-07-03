@@ -1,0 +1,93 @@
+# rule identifiers to exclude from running
+disabled_rules:
+  - trailing_whitespace
+  - todo
+  - mark
+  - vertical_whitespace
+  - syntactic_sugar
+  - unused_closure_parameter
+  - closure_parameter_position
+  - redundant_string_enum_value
+  - large_tuple
+  - shorthand_operator
+  - vertical_parameter_alignment
+  - identifier_name
+  - inclusive_language # Disabled until MasterTabBarController refactoring complete
+
+# some rules are only opt-in
+opt_in_rules:  
+  - force_unwrapping
+  - private_action
+  - explicit_init
+
+# paths to include during linting. `--path` is ignored if present.
+included:
+  - Riot
+
+# paths to ignore during linting. Takes precedence over `included`.
+excluded:
+  - Carthage
+  - Pods
+  - Riot/Generated/
+  - Riot/Modules/LaunchLoading/LoadingAnimation/
+
+line_length:
+  warning: 250
+  error: 1000
+
+file_length:
+  warning: 800
+  error: 1000
+
+type_body_length:
+  warning: 700
+  error: 1000
+
+function_parameter_count:
+  warning: 7
+  error: 10
+
+cyclomatic_complexity:
+  ignores_case_statements: true
+  warning: 20
+  error: 25
+
+function_body_length:
+  warning: 100
+  error: 150
+
+# naming rules can set warnings/errors for min_length and max_length
+# additionally they can set excluded names
+type_name:
+  min_length: 3 # only warning
+  max_length: # warning and error
+    warning: 150
+    error: 1000
+
+custom_rules:
+  ns_log_deprecation:
+    regex: "\\b(NSLog)\\b"
+    match_kinds: identifier
+    message: "MXLog should be used instead of NSLog()"
+    severity: error
+
+  print_deprecation:
+    regex: "\\b(print)\\b"
+    match_kinds: identifier
+    message: "MXLog should be used instead of print()"
+    severity: error
+
+  print_ln_deprecation:
+    regex: "\\b(println)\\b"
+    match_kinds: identifier
+    message: "MXLog should be used instead of println()"
+    severity: error
+
+  os_log_deprecation:
+    regex: "\\b(os_log)\\b"
+    match_kinds: identifier
+    message: "MXLog should be used instead of os_log()"
+    severity: error
+
+
+
