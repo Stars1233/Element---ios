@@ -1,0 +1,6 @@
+// Permissions usage explanations
+"NSCameraUsageDescription" = "De camera wor gebruukt vo fotootjes te trekkn en filmtjes te moakn, en vo videogesprekkn.";
+"NSPhotoLibraryUsageDescription" = "De fotogalerie wor gebruukt vo fotootjes en filmtjes te versteurn.";
+"NSMicrophoneUsageDescription" = "De microfoon wor gebruukt vo filmtjes te maken, en vo sproakiproepn.";
+"NSContactsUsageDescription" = "Vo je te kunn toogn dewelkse van je contactn dat al Matrix gebruukn, kun Riot d’e-mailadressn en telefongnumero’s in jen adresboek noa je gekoozn Matrix-identiteitsserver steurn. Woar meuglik worden persoonlike gegeevns gehasht vo dan ze worden verzonden - bekyk ’t privacybeleid van jen identiteitsserver vo meer informoasje.";
+"NSCalendarsUsageDescription" = "Bekykt je geplande afsproakn in den app.";
