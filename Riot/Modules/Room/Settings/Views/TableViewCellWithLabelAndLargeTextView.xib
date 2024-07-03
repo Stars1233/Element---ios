@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="124" id="5Je-1y-foH" customClass="TableViewCellWithLabelAndLargeTextView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="124"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5Je-1y-foH" id="hCm-wd-Yup">
+                <rect key="frame" x="0.0" y="0.0" width="600" height="123"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="584" translatesAutoresizingMaskIntoConstraints="NO" id="DE7-uC-Oz2">
+                        <rect key="frame" x="15" y="12" width="42" height="21"/>
+                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <accessibility key="accessibilityConfiguration" identifier="Label"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="a text" translatesAutoresizingMaskIntoConstraints="NO" id="6xh-yB-9FP">
+                        <rect key="frame" x="532" y="12" width="53" height="100"/>
+                        <accessibility key="accessibilityConfiguration" identifier="TextView"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="53" id="Nrj-Yh-zMx"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        <connections>
+                            <outlet property="delegate" destination="5Je-1y-foH" id="wnl-hm-OTD"/>
+                        </connections>
+                    </textView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="6xh-yB-9FP" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="DE7-uC-Oz2" secondAttribute="trailing" constant="16" id="oCm-jb-bm0"/>
+                    <constraint firstItem="DE7-uC-Oz2" firstAttribute="leading" secondItem="hCm-wd-Yup" secondAttribute="leading" constant="15" id="qse-r7-x6e"/>
+                </constraints>
+            </tableViewCellContentView>
+            <accessibility key="accessibilityConfiguration" identifier="TableViewCell"/>
+            <constraints>
+                <constraint firstItem="DE7-uC-Oz2" firstAttribute="top" secondItem="5Je-1y-foH" secondAttribute="top" constant="12" id="4gW-jW-XUX"/>
+                <constraint firstAttribute="bottom" secondItem="6xh-yB-9FP" secondAttribute="bottom" constant="12" id="Io9-HP-DJE"/>
+                <constraint firstItem="6xh-yB-9FP" firstAttribute="top" secondItem="5Je-1y-foH" secondAttribute="top" constant="12" id="PqJ-jG-FUv"/>
+                <constraint firstAttribute="trailing" secondItem="6xh-yB-9FP" secondAttribute="trailing" constant="15" id="hIh-cS-5Lj"/>
+            </constraints>
+            <connections>
+                <outlet property="label" destination="DE7-uC-Oz2" id="xmR-kD-5aJ"/>
+                <outlet property="labelLeadingConstraint" destination="qse-r7-x6e" id="MaG-lx-KhS"/>
+                <outlet property="labelTrailingMinConstraint" destination="oCm-jb-bm0" id="tK1-sl-BS3"/>
+                <outlet property="textView" destination="6xh-yB-9FP" id="dus-5x-CwT"/>
+                <outlet property="textViewTrailingConstraint" destination="hIh-cS-5Lj" id="iVx-5Q-LSe"/>
+                <outlet property="textViewWidthConstraint" destination="Nrj-Yh-zMx" id="Bws-Zg-agY"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
