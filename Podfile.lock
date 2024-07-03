@@ -1,0 +1,65 @@
+PODS:
+  - AFNetworking (2.6.3):
+    - AFNetworking/NSURLConnection (= 2.6.3)
+    - AFNetworking/NSURLSession (= 2.6.3)
+    - AFNetworking/Reachability (= 2.6.3)
+    - AFNetworking/Security (= 2.6.3)
+    - AFNetworking/Serialization (= 2.6.3)
+    - AFNetworking/UIKit (= 2.6.3)
+  - AFNetworking/NSURLConnection (2.6.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.6.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.6.3)
+  - AFNetworking/Security (2.6.3)
+  - AFNetworking/Serialization (2.6.3)
+  - AFNetworking/UIKit (2.6.3):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - GBDeviceInfo (3.4.1):
+    - GBJailbreakDetection (~> 1.0)
+  - GBJailbreakDetection (1.3.0)
+  - HPGrowingTextView (1.1)
+  - libPhoneNumber-iOS (0.8.11)
+  - MatrixKit (0.3.5):
+    - HPGrowingTextView (~> 1.1)
+    - libPhoneNumber-iOS (~> 0.8.7)
+    - MatrixSDK (~> 0.6.5)
+  - MatrixSDK (0.6.5):
+    - AFNetworking (~> 2.6.0)
+
+DEPENDENCIES:
+  - GBDeviceInfo (~> 3.4.0)
+  - MatrixKit (from `https://github.com/matrix-org/matrix-ios-kit.git`, branch `develop`)
+  - MatrixSDK (from `https://github.com/matrix-org/matrix-ios-sdk.git`, branch `develop`)
+
+EXTERNAL SOURCES:
+  MatrixKit:
+    :branch: develop
+    :git: https://github.com/matrix-org/matrix-ios-kit.git
+  MatrixSDK:
+    :branch: develop
+    :git: https://github.com/matrix-org/matrix-ios-sdk.git
+
+CHECKOUT OPTIONS:
+  MatrixKit:
+    :commit: b4cc5e3530216023fa78cadcae42624b8af1b60e
+    :git: https://github.com/matrix-org/matrix-ios-kit.git
+  MatrixSDK:
+    :commit: 48e2580540dbd5bf312f75d60c8922f6e2ca11d5
+    :git: https://github.com/matrix-org/matrix-ios-sdk.git
+
+SPEC CHECKSUMS:
+  AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
+  GBDeviceInfo: bab0f43d351b6f641a626cd7d21492abef1afe46
+  GBJailbreakDetection: a216773574b62dddb6c876ffdb52c54ac05e27e0
+  HPGrowingTextView: 88a716d97fb853bcb08a4a08e4727da17efc9b19
+  libPhoneNumber-iOS: ded33fab2c51ee847979556aa504c9e70f32d703
+  MatrixKit: defac2bf01d1397e00cf4b1a72a25ac10c2c901c
+  MatrixSDK: 598925faff319441724db8a6af2a9cfc21d167e5
+
+COCOAPODS: 0.39.0

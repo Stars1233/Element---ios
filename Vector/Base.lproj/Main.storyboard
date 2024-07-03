@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="H1p-Uh-vWS">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--RecentsNav-->
+        <scene sceneID="pY4-Hu-kfo">
+            <objects>
+                <navigationController title="Recents" id="RMx-3f-FxP" userLabel="RecentsNav" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="Pmd-2v-anx">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Zhm-Yz-mrT" kind="relationship" relationship="rootViewController" id="OEv-Oh-v9s"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8fS-aE-onr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="414" y="-2374"/>
+        </scene>
+        <!--Room-->
+        <scene sceneID="UrN-g2-oG1">
+            <objects>
+                <viewController title="Room" hidesBottomBarWhenPushed="YES" id="msb-ol-2LB" customClass="RoomViewController" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="3Zt-Wl-J6o">
+                        <nil key="title"/>
+                        <view key="titleView" contentMode="scaleToFill" id="aas-th-FW1" userLabel="Room title view container">
+                            <rect key="frame" x="60" y="2" width="480" height="40"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
+                        <barButtonItem key="rightBarButtonItem" image="search_icon.png" id="wyR-qv-IxC" userLabel="Menu Bar Button Item"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="roomTitleViewContainer" destination="aas-th-FW1" id="SFz-1s-ywg"/>
+                        <segue destination="e7G-NU-7ck" kind="show" identifier="showRoomDetails" id="vCz-dl-6xQ"/>
+                        <segue destination="KDg-aD-xlK" kind="show" identifier="showRoomSearch" id="hdA-V1-9AF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="94y-cU-qQD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1384" y="-1063"/>
+        </scene>
+        <!--Room Context Timeline-->
+        <scene sceneID="Htr-h8-baq">
+            <objects>
+                <viewController title="Room Context Timeline" hidesBottomBarWhenPushed="YES" id="Too-LV-OLW" customClass="RoomViewController" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="yLe-Hk-Sol">
+                        <nil key="title"/>
+                        <view key="titleView" contentMode="scaleToFill" id="djN-zB-Vni" userLabel="Room title view container">
+                            <rect key="frame" x="60" y="2" width="480" height="40"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
+                        <barButtonItem key="rightBarButtonItem" image="search_icon.png" id="Koy-mU-PTG" userLabel="Menu Bar Button Item"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="roomTitleViewContainer" destination="djN-zB-Vni" id="VQG-Mp-hSa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yjg-uP-Hcy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3362" y="-1299"/>
+        </scene>
+        <!--Room Search View Controller-->
+        <scene sceneID="rUg-1s-vHX">
+            <objects>
+                <viewController id="KDg-aD-xlK" customClass="RoomSearchViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="F5n-wr-hGG"/>
+                        <viewControllerLayoutGuide type="bottom" id="BxE-Q4-YjP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Kg1-rX-y7X">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="Too-LV-OLW" kind="show" identifier="showTimeline" id="P1V-0d-mYL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bK5-DX-KSF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2558" y="-1299"/>
+        </scene>
+        <!--Segmented View Controller-->
+        <scene sceneID="NZu-Q0-P0z">
+            <objects>
+                <tableViewController id="e7G-NU-7ck" customClass="SegmentedViewController" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fXh-hO-Zgf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2558" y="-595"/>
+        </scene>
+        <!--Authentication View Controller-->
+        <scene sceneID="FoA-N2-3aF">
+            <objects>
+                <viewController hidesBottomBarWhenPushed="YES" id="ZlD-EU-ncw" customClass="AuthenticationViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="crg-iM-twR"/>
+                        <viewControllerLayoutGuide type="bottom" id="gbK-Nm-HUT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wIi-Yi-2pi">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mvZ-se-pqQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="414" y="1356"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="4CK-43-kSo">
+            <objects>
+                <tableViewController id="1TJ-Md-cjN" customClass="SettingsViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="interactive" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="etG-ZU-b2r">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
+                        <connections>
+                            <outlet property="dataSource" destination="1TJ-Md-cjN" id="Lqt-w3-NjQ"/>
+                            <outlet property="delegate" destination="1TJ-Md-cjN" id="pgx-SX-xgc"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Settings" id="7NM-zW-wJT"/>
+                    <connections>
+                        <segue destination="KeQ-Sp-kmH" kind="show" identifier="showAccountDetails" id="flf-61-vgV"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZKJ-22-Asy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1404" y="96"/>
+        </scene>
+        <!--Account Details View Controller-->
+        <scene sceneID="V8G-Oz-3KA">
+            <objects>
+                <tableViewController hidesBottomBarWhenPushed="YES" id="KeQ-Sp-kmH" customClass="AccountDetailsViewController" sceneMemberID="viewController">
+                    <connections>
+                        <segue destination="h5x-Kb-9pa" kind="show" identifier="showGlobalNotificationSettings" id="kgj-1g-opx"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KBx-ZK-1zU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2297" y="88"/>
+        </scene>
+        <!--Global notification settings-->
+        <scene sceneID="QZt-ZR-Vkj">
+            <objects>
+                <tableViewController title="Global notification settings" hidesBottomBarWhenPushed="YES" id="h5x-Kb-9pa" customClass="GlobalNotificationSettingsViewController" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iOf-Cf-2Ew" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3237" y="96"/>
+        </scene>
+        <!--RecentsSplitVC-->
+        <scene sceneID="Nki-YV-4Qg">
+            <objects>
+                <splitViewController title="RecentsSplitVC" id="H1p-Uh-vWS" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="EB5-8V-irH"/>
+                    <connections>
+                        <segue destination="RMx-3f-FxP" kind="relationship" relationship="masterViewController" id="BlO-5A-QYV"/>
+                        <segue destination="vC3-pB-5Vb" kind="relationship" relationship="detailViewController" id="0ws-cL-0tk"/>
+                    </connections>
+                </splitViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cZU-Oi-B1e" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-740" y="-1649"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="O3K-sK-0fA">
+            <objects>
+                <viewController id="Zhm-Yz-mrT" customClass="HomeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NTL-bt-4A3"/>
+                        <viewControllerLayoutGuide type="bottom" id="dim-1V-Mdx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jgV-fC-DUP">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="lkL-Yi-y5i">
+                        <barButtonItem key="leftBarButtonItem" image="settings_icon.png" id="RwK-LB-3ML">
+                            <connections>
+                                <segue destination="1TJ-Md-cjN" kind="show" id="rCU-QE-kdQ"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="search_icon.png" id="mxO-nq-rJ1">
+                            <connections>
+                                <action selector="onButtonPressed:" destination="Zhm-Yz-mrT" id="JyE-Bk-xvr"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="searchBarButtonIem" destination="mxO-nq-rJ1" id="J1s-2g-XGk"/>
+                        <outlet property="settingsBarButtonItem" destination="RwK-LB-3ML" id="T3b-ii-7fa"/>
+                        <segue destination="vC3-pB-5Vb" kind="showDetail" identifier="showDetails" id="agy-3r-khl"/>
+                        <segue destination="ZlD-EU-ncw" kind="presentation" identifier="showAuth" id="vfC-8C-AsT"/>
+                        <segue destination="dP6-5F-5s0" kind="showDetail" identifier="showDirectory" action="showViewController:sender:" id="hvq-zV-OB7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pF2-9z-Wl6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1364" y="-2374"/>
+        </scene>
+        <!--Directory View Controller-->
+        <scene sceneID="zQD-eP-aY2">
+            <objects>
+                <tableViewController id="dP6-5F-5s0" customClass="DirectoryViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="JIN-S2-qUn">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yn2-Xd-dn4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2364" y="-2374"/>
+        </scene>
+        <!--RoomNav-->
+        <scene sceneID="r7l-gg-dq7">
+            <objects>
+                <navigationController title="RoomNav" id="vC3-pB-5Vb" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="DjV-YW-jjY">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="msb-ol-2LB" kind="relationship" relationship="rootViewController" id="5tu-jh-ZP6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SLD-UC-DBI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="414" y="-1081"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="search_icon.png" width="22" height="22"/>
+        <image name="settings_icon.png" width="24" height="24"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="agy-3r-khl"/>
+    </inferredMetricsTieBreakers>
+</document>
