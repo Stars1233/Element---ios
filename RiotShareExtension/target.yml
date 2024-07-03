@@ -1,0 +1,91 @@
+name: RiotShareExtension
+
+schemes:
+  RiotShareExtension:
+    analyze:
+      config: Debug
+    archive:
+      config: Release
+    build:
+      targets:
+        RiotShareExtension:
+        - running
+        - testing
+        - profiling
+        - analyzing
+        - archiving
+    profile:
+      config: Release
+    run:
+      askForAppToLaunch: true
+      config: Debug
+      debugEnabled: false
+      disableMainThreadChecker: true
+      launchAutomaticallySubstyle: 2
+    test:
+      config: Debug
+      disableMainThreadChecker: true
+
+targets:
+  RiotShareExtension:
+    platform: iOS
+    type: app-extension
+
+    dependencies:
+    - package: AnalyticsEvents
+    - package: DeviceKit
+    - package: DTCoreText
+
+    configFiles:
+      Debug: Debug.xcconfig
+      Release: Release.xcconfig
+
+    sources:
+    - path: .
+    - path: ../Riot/Modules/Common/SegmentedViewController/SegmentedViewController.m
+    - path: ../Riot/Categories/Bundle.swift
+    - path: ../Riot/Categories/MXEvent.swift
+    - path: ../Riot/Managers/Theme/
+    - path: ../Riot/Utils/AvatarGenerator.m
+    - path: ../Config/BuildSettings.swift
+    - path: ../Config/MDMSettings.swift
+    - path: ../Riot/Categories/Character.swift
+    - path: ../Riot/Categories/MXKImageView.swift
+    - path: ../Riot/Categories/MXRoom+Riot.m
+    - path: ../Config/Configurable.swift
+    - path: ../Config/CommonConfiguration.swift
+    - path: ../Riot/Experiments/
+    - path: ../Riot/Utils/UserNameColorGenerator.swift
+    - path: ../Riot/Categories/MXRoomSummary+Riot.m
+    - path: ../Riot/Managers/EncryptionKeyManager/EncryptionKeyManager.swift
+    - path: ../Riot/Managers/KeyValueStorage
+    - path: ../Riot/Managers/Settings/RiotSettings.swift
+    - path: ../Riot/Managers/AppInfo/
+    - path: ../Riot/Categories/UIColor.swift
+    - path: ../Riot/Categories/UISearchBar.swift
+    - path: ../Riot/Categories/String.swift
+    - path: ../Riot/Categories/UIView.swift
+    - path: ../Riot/Categories/UITextView.swift
+    - path: ../Riot/Modules/Common/Recents/Model/RecentCellData.m
+    - path: ../Riot/PropertyWrappers/UserDefaultsBackedPropertyWrapper.swift
+    - path: ../Riot/Generated/Strings.swift
+    - path: ../Riot/Generated/Images.swift
+    - path: ../Riot/Managers/Locale/LocaleProviderType.swift
+    - path: ../Riot/Managers/Locale/LocaleProvider.swift
+    - path: ../Riot/Modules/Common/SegmentedViewController/SegmentedViewController.xib
+      buildPhase: resources
+    - path: ../Riot/Assets/en.lproj/Vector.strings
+      buildPhase: resources
+    - path: ../Riot/Assets/SharedImages.xcassets
+      buildPhase: resources
+    - path: ../Riot/Modules/MatrixKit
+      excludes:
+        - "**/MXKAuthenticationViewController.*"
+        - "Views/Authentication/**"
+    - path: ../Riot/Modules/Analytics
+    - path: ../Riot/Managers/UserSessions
+      excludes:
+        - "**/*.md" # excludes all files with the .md extension
+    - path: ../Riot/Modules/Room/TimelineCells/Styles/RoomTimelineStyleIdentifier.swift
+    - path: ../Riot/Modules/VoiceBroadcast/VoiceBroadcastSDK/MatrixSDK
+    - path: ../Riot/Modules/Encryption/EncryptionTrustLevel.swift
