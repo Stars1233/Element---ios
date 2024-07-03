@@ -1,0 +1,25 @@
+/*
+ Copyright 2016 OpenMarket Ltd
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+ http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+ */
+
+// Permissions usage explanations
+"NSCameraUsageDescription" = "The camera is used to make video calls, or take and upload photos and videos.";
+"NSPhotoLibraryUsageDescription" = "Allow access to photos to upload photos and videos from your library.";
+"NSMicrophoneUsageDescription" = "Element needs to access your microphone to make and receive calls, take videos, and record voice messages.";
+"NSContactsUsageDescription" = "They will be shared with your identity server to help find your contacts on Matrix.";
+"NSCalendarsUsageDescription" = "See your scheduled meetings in the app.";
+"NSFaceIDUsageDescription" = "Face ID is used to access your app.";
+"NSLocationWhenInUseUsageDescription" = "When you share your location to people, Element needs access to show them a map.";
+"NSLocationAlwaysAndWhenInUseUsageDescription" = "When you share your location to people, Element needs access to show them a map.";
