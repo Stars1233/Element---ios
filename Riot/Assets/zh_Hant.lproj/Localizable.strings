@@ -1,0 +1,131 @@
+/* New message from a specific person, not referencing a room */
+"MSG_FROM_USER" = "%@ 傳來的訊息";
+/* New message from a specific person in a named room */
+"MSG_FROM_USER_IN_ROOM" = "%@ 在 %@ 貼文";
+/* New message from a specific person, not referencing a room. Content included. */
+"MSG_FROM_USER_WITH_CONTENT" = "%@：%@";
+/* New message from a specific person in a named room. Content included. */
+"MSG_FROM_USER_IN_ROOM_WITH_CONTENT" = "%@ 在 %@：%@";
+/* New action message from a specific person, not referencing a room. */
+"ACTION_FROM_USER" = "* %@ %@";
+/* New action message from a specific person in a named room. */
+"ACTION_FROM_USER_IN_ROOM" = "%@：* %@ %@";
+/* New action message from a specific person, not referencing a room. */
+/* New action message from a specific person in a named room. */
+"IMAGE_FROM_USER_IN_ROOM" = "%@ 貼出一張圖片 %@ 在 %@";
+/* Multiple unread messages in a room */
+"UNREAD_IN_ROOM" = "%@ 個新訊息在 %@";
+/* Multiple unread messages from a specific person, not referencing a room */
+"MSGS_FROM_USER" = "%@ 個新訊息在 %@";
+/* Multiple unread messages from two people */
+"MSGS_FROM_TWO_USERS" = "%@ 個新訊息來自 %@ 與 %@";
+/* Multiple unread messages from three people */
+"MSGS_FROM_THREE_USERS" = "%@ 個新訊息來自 %@、%@ 與 %@";
+/* Multiple unread messages from two plus people (ie. for 4+ people: 'others' replaces the third person) */
+"MSGS_FROM_TWO_PLUS_USERS" = "%@ 個新訊息來自 %@、%@ 與其他人";
+/* Multiple messages in two rooms */
+"MSGS_IN_TWO_ROOMS" = "%@ 個新訊息來自 %@ 與 %@";
+/* Look, stuff's happened, alright? Just open the app. */
+"MSGS_IN_TWO_PLUS_ROOMS" = "%@ 個新訊息來自 %@、%@ 與其他";
+/* A user has invited you to a chat */
+"USER_INVITE_TO_CHAT" = "%@ 已經邀請您來聊天";
+/* A user has invited you to an (unamed) group chat */
+"USER_INVITE_TO_CHAT_GROUP_CHAT" = "%@ 已經邀請您到群組聊天中";
+/* A user has invited you to a named room */
+"USER_INVITE_TO_NAMED_ROOM" = "%@ 已經邀請您加入 %@";
+/* Incoming one-to-one voice call */
+"VOICE_CALL_FROM_USER" = "來自 %@ 的通話";
+/* Incoming one-to-one video call */
+"VIDEO_CALL_FROM_USER" = "來自 %@ 的視訊通話";
+/* Incoming unnamed voice conference invite from a specific person */
+"VOICE_CONF_FROM_USER" = "來自 %@ 的群組通話";
+/* Incoming unnamed video conference invite from a specific person */
+"VIDEO_CONF_FROM_USER" = "來自 %@ 的視訊群組通話";
+/* Incoming named voice conference invite from a specific person */
+"VOICE_CONF_NAMED_FROM_USER" = "來自 %@ 的群組通話：'%@'";
+/* Incoming named video conference invite from a specific person */
+"VIDEO_CONF_NAMED_FROM_USER" = "來自 %@ 的視訊群組通話：'%@'";
+/* A single unread message in a room */
+"SINGLE_UNREAD_IN_ROOM" = "您在 %@ 中收到了一則訊息";
+/* A single unread message */
+"SINGLE_UNREAD" = "您收到了一則訊息";
+/* Message title for a specific person in a named room */
+"MSG_FROM_USER_IN_ROOM_TITLE" = "%@ 從 %@";
+
+/* New message reply from a specific person in a named room. */
+"REPLY_FROM_USER_IN_ROOM_TITLE" = "%@ 在 %@ 已回覆";
+
+/* New message reply from a specific person, not referencing a room. */
+"REPLY_FROM_USER_TITLE" = "%@ 已回覆";
+/** General **/
+
+"Notification" = "通知";
+
+/** Key verification **/
+
+"KEY_VERIFICATION_REQUEST_FROM_USER" = "%@ 請求驗證";
+
+/* Group call from user, CallKit caller name */
+"GROUP_CALL_FROM_USER" = "%@ （群組通話）";
+
+/* A user added a Jitsi call to a room */
+"GROUP_CALL_STARTED" = "群組通話開始";
+
+/* A user's membership has updated in an unknown way */
+"USER_MEMBERSHIP_UPDATED" = "%@ 更新了簡介";
+
+/* A user has change their name to a new name which we don't know */
+"GENERIC_USER_UPDATED_DISPLAYNAME" = "%@ 變更名稱";
+
+/** Membership Updates **/
+
+/* A user has change their name to a new name */
+"USER_UPDATED_DISPLAYNAME" = "%@ 變更名稱為 %@";
+
+/* A user has change their avatar */
+"USER_UPDATED_AVATAR" = "%@ 變更頭像";
+
+/* A user has reacted to a message, but the reaction content is unknown */
+"GENERIC_REACTION_FROM_USER" = "%@ 送出一個反應";
+
+/** Reactions **/
+
+/* A user has reacted to a message, including the reaction e.g. "Alice reacted 👍". */
+"REACTION_FROM_USER" = "%@ 覺得 %@";
+
+/* New message with hidden content due to PIN enabled */
+"MESSAGE_PROTECTED" = "新訊息";
+
+/* New message indicator on a room */
+"MESSAGE_IN_X" = "在 %@ 的訊息";
+
+/* New message indicator from a DM */
+"MESSAGE_FROM_X" = "來自 %@ 的訊息";
+
+/** Notification messages **/
+
+/* New message indicator on unknown room */
+"MESSAGE" = "訊息";
+
+/* Sticker from a specific person, not referencing a room. */
+"STICKER_FROM_USER" = "%@ 戳你一下";
+
+/* New file message from a specific person, not referencing a room. */
+"LOCATION_FROM_USER" = "%@ 已分享他的位置";
+
+/* New file message from a specific person, not referencing a room. */
+"FILE_FROM_USER" = "%@ 傳送一個檔案 %@";
+
+/* New voice message from a specific person, not referencing a room. */
+"VOICE_MESSAGE_FROM_USER" = "%@ 傳送一個語音訊息";
+
+/* New audio message from a specific person, not referencing a room. */
+"AUDIO_FROM_USER" = "%@ 傳送一個音訊檔案 %@";
+
+/* New video message from a specific person, not referencing a room. */
+"VIDEO_FROM_USER" = "%@ 傳送一個影片";
+
+/** Media Messages **/
+
+/* New image message from a specific person, not referencing a room. */
+"PICTURE_FROM_USER" = "%@ 傳送一張圖片";
