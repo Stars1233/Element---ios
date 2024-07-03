@@ -1,0 +1,39 @@
+// 
+// Copyright 2021 Vector Creations Ltd
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+// http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+//
+
+
+// App identity
+BUNDLE_DISPLAY_NAME = Element
+BASE_BUNDLE_IDENTIFIER = im.vector.app
+APPLICATION_GROUP_IDENTIFIER = group.im.vector
+APPLICATION_SCHEME = element
+
+// Team
+DEVELOPMENT_TEAM = 7J4U792NQT
+
+
+// Provisioning profiles
+RIOT_PROVISIONING_PROFILE_SPECIFIER = Vector App Store
+RIOT_PROVISIONING_PROFILE = 7579fa6f-9887-415e-90fc-2c7acd8812e6
+
+NSE_PROVISIONING_PROFILE_SPECIFIER = "Vector NSE: App Store"
+NSE_PROVISIONING_PROFILE = e73107b2-1bfe-4615-be3e-39fd4dcb2af0
+
+SHARE_EXTENSION_PROVISIONING_PROFILE_SPECIFIER = "Vector Share Extension: App Store"
+SHARE_EXTENSION_PROVISIONING_PROFILE = 8c797ca0-0440-49bd-be8d-11d761152995
+
+SIRI_INTENTS_PROVISIONING_PROFILE_SPECIFIER = "Vector Siri Intents: App Store"
+SIRI_INTENTS_PROVISIONING_PROFILE = 1690e81a-5ad3-4d99-b578-02693579be71
